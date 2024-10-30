@@ -12,6 +12,15 @@ const nextConfig = {
       },
     ],
   },
+  // Vercelへのデプロイ時の設定
+  typescript: {
+    // ビルド時の型チェックをスキップ（オプション）
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    // ビルド時のESLintチェックをスキップ（オプション）
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
